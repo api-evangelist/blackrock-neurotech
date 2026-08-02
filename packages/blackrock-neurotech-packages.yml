@@ -1,0 +1,104 @@
+generated: '2026-08-02'
+method: searched
+source: https://github.com/BlackrockNeurotech + https://blackrockneurotech.com/products/software/
+notes: >-
+  Blackrock Neurotech publishes no packages to npm, PyPI, Maven Central, NuGet,
+  pkg.go.dev, RubyGems, Packagist or crates.io (all probed 2026-08-02, all 404).
+  Its first-party client libraries are distributed as source from the
+  BlackrockNeurotech GitHub organization and as signed installers/IFU-numbered
+  downloads from the support site. Device/instrument APIs (cbSDK, cbMEX, CereStim
+  API) ship inside the Central Software Suite download rather than a public
+  package registry, so they are recorded here as distribution: download.
+registries_probed:
+- registry: npm
+  found: false
+- registry: pypi
+  found: false
+  probed: [brpylib, cerebus, npmk, blackrock-neurotech]
+- registry: maven-central
+  found: false
+- registry: nuget
+  found: false
+- registry: pkg.go.dev
+  found: false
+- registry: rubygems
+  found: false
+- registry: packagist
+  found: false
+- registry: crates.io
+  found: false
+packages:
+- language: matlab
+  registry: github
+  name: NPMK
+  description: Neural Processing Matlab Kit — functions for loading and manipulating
+    Blackrock data files (.CCF, .NEV, .NSx).
+  url: https://github.com/BlackrockNeurotech/NPMK
+  version: v5.5.6.0
+  install: git clone https://github.com/BlackrockNeurotech/NPMK.git
+  official: true
+- language: python
+  registry: github
+  name: brpylib (Python-Utilities)
+  description: Python data loader and offline utilities for Blackrock Microsystems
+    data files.
+  url: https://github.com/BlackrockNeurotech/Python-Utilities
+  version: '2.0.0'
+  install: pip install git+https://github.com/BlackrockNeurotech/Python-Utilities.git
+  official: true
+- language: cpp
+  registry: github
+  name: BOSS
+  description: Blackrock Offline Spike Sorter (RS-0126) source code.
+  url: https://github.com/BlackrockNeurotech/BOSS
+  version: 1.03.00
+  official: true
+- language: cpp
+  registry: github
+  name: aqnwb
+  description: C++ API for data acquisition using the NWB (Neurodata Without Borders)
+    format.
+  url: https://github.com/BlackrockNeurotech/aqnwb
+  official: true
+- language: python
+  registry: github
+  name: SegmentDeshuffle
+  description: Source and instructions for the SegmentDeshuffle utility.
+  url: https://github.com/BlackrockNeurotech/SegmentDeshuffle
+  official: true
+- language: cpp
+  registry: download
+  name: cbSDK (C++ API)
+  description: C++ API for real-time interfacing with Blackrock neural signal
+    processors; ships with the Central Software Suite.
+  url: https://blackrockneurotech.com/support/
+  official: true
+- language: matlab
+  registry: download
+  name: cbMEX (NSP MATLAB API)
+  description: MATLAB interface for real-time neural data acquisition from Blackrock
+    NSPs. IFU LB-0590 Rev 3.00.
+  url: https://blackrockneurotech.com/products/software/
+  official: true
+- language: cpp
+  registry: download
+  name: CereStim API
+  description: Programming API for the CereStim stimulation system. v5.3.0, IFU 0900
+    Rev 4.00.
+  url: https://blackrockneurotech.com/products/software/
+  official: true
+third_party:
+- language: multi
+  name: CereLink
+  description: Community SDK for real-time interfacing with Blackrock data acquisition
+    systems (cbsdk C++, Cerelink Python, cbmex/cboct MATLAB, C#/CLI, n2h5). Blackrock's
+    own knowledge base states "CereLink is not Blackrock-supported."
+  url: https://github.com/CerebusOSS/CereLink
+  reference: https://support.blackrockneurotech.com/portal/en/kb/articles/cbpy
+  official: false
+- language: python
+  name: br_stimpy
+  description: Python wrapper for Blackrock Neurotech's CereStim API, maintained by
+    the Pitt Rehab Neural Engineering Labs.
+  url: https://github.com/pitt-rnel/br_stimpy
+  official: false

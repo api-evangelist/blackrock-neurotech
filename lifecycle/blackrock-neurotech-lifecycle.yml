@@ -1,0 +1,50 @@
+generated: '2026-08-02'
+method: searched
+source: https://blackrockneurotech.com/products/software/ + https://blackrockneurotech.com/support/
+scope: >-
+  Blackrock Neurotech ships regulated instrument software rather than a hosted API,
+  so its lifecycle surface is product release versions plus controlled IFU
+  (Instructions For Use) documents, not an API version train.
+versioning:
+  scheme: product-release
+  pattern: >-
+    Software and firmware carry dotted product versions (e.g. Central Software
+    Suite v7.8.0); each release is bound to a controlled document identified by an
+    RS-/LB-/PN- number and a document revision (e.g. cbMEX IFU LB-0590 Rev 3.00).
+  docs: https://blackrockneurotech.com/products/software/
+  current_releases:
+  - {product: Central Software Suite (Cerebus RS-0048), version: 7.8.0}
+  - {product: Central Software Suite (NeuroPort RS-0049), version: 7.8.0}
+  - {product: CerePlex Direct Central Suite (RS-0101), version: 7.8.0}
+  - {product: CereStim GUI / StimManager (RS-0074), version: 6.01.00}
+  - {product: CereStim API, version: 5.3.0, ifu: 0900 Rev 4.00}
+  - {product: cbMEX (NSP MATLAB API), ifu: LB-0590 Rev 3.00}
+  - {product: Blackrock Offline Spike Sorter (BOSS, RS-0126), version: 1.03.00}
+  - {product: Neural Processing Matlab Kit (NPMK), version: 5.5.6.0}
+  - {product: brPY Python Data Loader, version: 2.0.0}
+  - {product: Gemini System Firmware Updater (RS-0153), version: 7.8.0}
+  - {product: Cerebus Legacy Firmware (RS-0115), version: 7.6.0}
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No published deprecation or sunset policy was found. Superseded releases are
+    handled as legacy firmware/software downloads (e.g. Cerebus Legacy Firmware
+    RS-0115 v7.6.0) on the support downloads page rather than by a stated policy.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+support:
+  url: https://blackrockneurotech.com/support/
+  knowledge_base: https://support.blackrockneurotech.com/portal/en/kb/support
+  email: support@blackrockneuro.com
+  phone: 801-839-1062
+  clinical_software_request: https://blackrockneurotech.formstack.com/forms/blackrock_neurotech_clinical_software_and_firmware_request_form
+deprecated_operations: []
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+  - {url: 'https://blackrockneurotech.com/products/software/', http_status: 200}
+  - {url: 'https://blackrockneurotech.com/support/', http_status: 200}
+  no_status_page: 'No status.* host or status page link found; status.blackrockneurotech.com not resolved.'

@@ -1,0 +1,41 @@
+generated: '2026-08-02'
+method: probed
+source: live GET of /.well-known/* on every Blackrock Neurotech host
+result: none
+notes: >-
+  No /.well-known/ discovery documents are published on any Blackrock Neurotech
+  host. Every path below returned HTTP 404; the www host answers 404 with the
+  WordPress theme's HTML error page and the support host with the Zoho Desk error
+  page, so no false-positive 200 HTML shells were recorded. No apis.yml pointer is
+  wired for this file — there is nothing to point at.
+hosts:
+- host: https://blackrockneurotech.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /llms.txt, status: 404}
+  - {path: /openapi.json, status: 404}
+  - {path: /robots.txt, status: 200, note: WordPress/Yoast robots + sitemap only}
+- host: https://support.blackrockneurotech.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /llms.txt, status: 404}
+subdomains_probed:
+- {host: api.blackrockneurotech.com, dns: NXDOMAIN}
+- {host: developer.blackrockneurotech.com, dns: NXDOMAIN}
+- {host: docs.blackrockneurotech.com, dns: NXDOMAIN}
+- {host: mcp.blackrockneurotech.com, dns: NXDOMAIN}
+- {host: trust.blackrockneurotech.com, dns: NXDOMAIN}

@@ -1,0 +1,52 @@
+# Blackrock Neurotech
+
+> Blackrock Neurotech (Salt Lake City, Utah) designs and manufactures implantable
+> brain-computer interface systems and the research instrumentation around them —
+> Utah Array microelectrode arrays, the Neuralace interface, the NeuroPort/Cerebus/
+> CerePlex Direct neural signal processors, the CereStim stimulation system, and the
+> Central software suite. Blackrock publishes no public web API. Its programmatic
+> surface is a set of device and file-format libraries (cbSDK C++ API, cbMEX MATLAB
+> API, CereStim API, brPY/brpylib, NPMK) distributed as GitHub source and as
+> IFU-numbered downloads from the support site.
+
+## Company
+- [Blackrock Neurotech](https://blackrockneurotech.com/): Company home.
+- [Our Technology](https://blackrockneurotech.com/our-tech/): BCI platform overview.
+- [For Researchers](https://blackrockneurotech.com/for-researchers/): Research product and study support.
+- [Our Story](https://blackrockneurotech.com/our-story/): Company background.
+- [News](https://blackrockneurotech.com/news/): Company news and media ([RSS](https://blackrockneurotech.com/feed/)).
+
+## Products
+- [Research Products](https://blackrockneurotech.com/products/): Full hardware and software catalog.
+- [Software](https://blackrockneurotech.com/products/software/): Central Software Suite, cbMEX, NPMK, brPY, CereStim GUI, BOSS, firmware.
+
+## Developer and API surface
+- [GitHub organization](https://github.com/BlackrockNeurotech): Public source and released binaries.
+- [NPMK](https://github.com/BlackrockNeurotech/NPMK): MATLAB toolkit for .CCF/.NEV/.NSx data files.
+- [Python-Utilities (brpylib)](https://github.com/BlackrockNeurotech/Python-Utilities): Python loader for Blackrock data files.
+- [BOSS](https://github.com/BlackrockNeurotech/BOSS): Blackrock Offline Spike Sorter source.
+- [aqnwb](https://github.com/BlackrockNeurotech/aqnwb): C++ acquisition API for the NWB format.
+- cbSDK (C++), cbMEX (MATLAB, IFU LB-0590) and the CereStim API (v5.3.0, IFU 0900) ship inside the Central Software Suite download — see the support downloads page.
+
+## Support
+- [Support and downloads](https://blackrockneurotech.com/support/): Software, drivers, IFU manuals.
+- [Knowledge base](https://support.blackrockneurotech.com/portal/en/kb/support): Searchable support articles.
+- [FAQ](https://blackrockneurotech.com/faq/)
+- [Contact](https://blackrockneurotech.com/contact/) — support@blackrockneuro.com, 801-839-1062.
+
+## Legal
+- [Privacy Policy](https://blackrockneurotech.com/privacy/)
+- [Terms](https://blackrockneurotech.com/terms/)
+- [Accessibility](https://blackrockneurotech.com/accessibility/)
+
+## Optional
+- [API Evangelist profile](https://apis.io/providers/blackrock-neurotech/)
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/blackrock-neurotech/refs/heads/main/apis.yml)
+
+## Notes for agents
+- No OpenAPI, AsyncAPI, GraphQL, gRPC, MCP server, A2A agent card, OAuth surface or
+  /.well-known/ discovery document was found on any Blackrock host (probed 2026-08-02).
+- There is no self-service sign-up, pricing page or sandbox: hardware and clinical
+  software are obtained through sales and a clinical software request form.
+- CereLink (github.com/CerebusOSS/CereLink) and br_stimpy are community projects;
+  Blackrock's knowledge base states CereLink is not Blackrock-supported.
