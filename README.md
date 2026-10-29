@@ -64,43 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Blackrock Neurotech is a Salt Lake City, Utah based neurotechnology company that designs and manufactures implantable brain-computer interface (BCI) systems and the research instrumentation around them — Utah Array microelectrode arrays and the Neuralace interface, the NeuroPort / Cerebus / CerePlex Direct neural signal processors, the CereStim stimulation system, and the Central software suite for acquisition, visualization and offline spike sorting.
+Blackrock Neurotech is a Salt Lake City, Utah based neurotechnology company that designs and manufactures implantable brain-computer interface (BCI) systems and the research instrumentation around them. Its platform pairs Utah Array microelectrode arrays and the next-generation Neuralace interface with the NeuroPort, Cerebus and CerePlex Direct neural signal processors, the CereStim stimulation system, and the Central software suite for acquisition, visualization and offline spike sorting. The company reports more than 19 years of human clinical study, 1,000+ research institutions served and 2,000+ published studies using its hardware. Blackrock does not publish a public web API: its programmatic surface is a set of device and file-format libraries distributed as downloads and GitHub source (cbSDK C++ API, cbMEX MATLAB API, CereStim API, brPY/brpylib Python data loader, and the NPMK MATLAB toolkit). Enrichment probing on 2026-08-02 found no OpenAPI, AsyncAPI, GraphQL, MCP, agent card, llms.txt or /.well-known/ discovery surface on any Blackrock host.
 
-- Website: https://blackrockneurotech.com/
-- Products: https://blackrockneurotech.com/products/
-- Software: https://blackrockneurotech.com/products/software/
-- Support: https://blackrockneurotech.com/support/
-- Knowledge base: https://support.blackrockneurotech.com/portal/en/kb/support
-- GitHub: https://github.com/BlackrockNeurotech
-- News: https://blackrockneurotech.com/news/
+**Areas:** Company · Neurotechnology · Brain-Computer Interface · Medical Devices · Neuroscience · Research Instrumentation · Implantable Devices · Health Tech · Assistive Technology · Signal Processing
 
-## API surface
+## Blackrock Neurotech on APIs.io
 
-Blackrock Neurotech publishes **no public web API**. Its programmatic surface is a set of
-device and file-format libraries distributed as GitHub source and as IFU-numbered downloads:
+Everything profiled for Blackrock Neurotech is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/blackrock-neurotech/](https://apis.io/providers/blackrock-neurotech/)** — or go straight to one of the APIs or properties below.
 
-- **cbSDK** — C++ API for real-time interfacing with Blackrock neural signal processors
-- **cbMEX** — NSP MATLAB API (IFU LB-0590 Rev 3.00)
-- **CereStim API** — stimulation system API (v5.3.0, IFU 0900 Rev 4.00)
-- **brPY / brpylib** — Python data loader ([Python-Utilities](https://github.com/BlackrockNeurotech/Python-Utilities))
-- **NPMK** — Neural Processing Matlab Kit ([NPMK](https://github.com/BlackrockNeurotech/NPMK))
-- **BOSS** — Blackrock Offline Spike Sorter source
-- **aqnwb** — C++ acquisition API for the NWB format
+### Published properties
 
-CereLink and br_stimpy are community projects; Blackrock's knowledge base states CereLink
-is not Blackrock-supported.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Enrichment (2026-08-02)
+#### Security (1)
 
-Probed and confirmed absent on every Blackrock host: OpenAPI/Swagger, GraphQL, AsyncAPI,
-gRPC/protobuf, MCP server, A2A agent card, `llms.txt`, and all `/.well-known/` discovery
-documents. No `api.`, `developer.`, `docs.`, `mcp.` or `trust.` subdomain resolves. No
-status page, no vulnerability-disclosure program, no trust center.
+Authentication, trust centre, and vulnerability disclosure.
 
-Artifacts in this repo:
+- [Blackrock Neurotech Domain Security](https://apis.io/security/blackrock-neurotech/blackrock-neurotech-domain-security/)
 
-- `packages/` — first-party client libraries and device APIs, plus registry probe results
-- `well-known/` — negative probe record for every `/.well-known/` path on every host
-- `llms/` — generated `llms.txt` for the company
-- `lifecycle/` — product/IFU release versioning surface
-- `security/` — probed domain security posture (TLS/HSTS/DNSSEC/CAA/SPF/DMARC)
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://blackrockneurotech.com/)
+- [Documentation](https://support.blackrockneurotech.com/portal/en/kb/support)
+- [Support](https://blackrockneurotech.com/support/)
+- [Blog](https://blackrockneurotech.com/news/)
+- [Terms of service](https://blackrockneurotech.com/terms/)
+- [Privacy policy](https://blackrockneurotech.com/privacy/)
+- [GitHub](https://github.com/BlackrockNeurotech)
+
+## API Evangelist rating
+
+**Kin Score 14.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/blackrock-neurotech/](https://apis.io/providers/blackrock-neurotech/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Blackrock Neurotech: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/blackrock-neurotech/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
